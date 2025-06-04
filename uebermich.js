@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    VANTA.NET({
+    VANTA.GLOBE({
         el: "#VantaHintergrund",
         mouseControls: true,
         touchControls: true,
@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         points: 10.0,
         maxDistance: 20.0,
         spacing: 18.0,
-        color: 0xff0000
+        color: 0xed135f
     });
 });

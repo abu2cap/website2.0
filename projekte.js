@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    VANTA.NET({
+    VANTA.CELLS({
         el: "#VantaHintergrund",
         mouseControls: true,
         touchControls: true,
