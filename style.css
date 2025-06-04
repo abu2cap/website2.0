@@ -1,0 +1,149 @@
+/* ========== Grundlayout ========== */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Anonymous Pro", monospace;
+    color: white;
+}
+
+/* Wrapper für den Grid-Inhalt */
+.index-body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+/* ========== Header, Footer, Text ========== */
+header {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+header, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ========== Grid für Kacheln ========== */
+.GridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+}
+
+/* ========== Kachel-Styling (tile1–tile4) ========== */
+
+.tile1, .tile2, .tile3, .tile4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 20px solid;
+    border-image-slice: 20;
+    border-image: linear-gradient(to right, purple, white) 1;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Individuelle Verläufe */
+.tile1 { background-image: linear-gradient(to top left, black, #d11c68 ); }
+.tile2 { background-image: linear-gradient(to top right, black, #d11c68); }
+.tile3 { background-image: linear-gradient(to bottom left, black, #d11c68); }
+.tile4 { background-image: linear-gradient(to bottom right, black, #d11c68); }
+
+/* Hover-Effekte */
+.tile1:hover {
+    box-shadow:
+    0 0 10px rgba(150, 20, 90, 0.6),
+    0 0 20px rgba(150, 20, 90, 0.3),
+    0 0 30px rgba(150, 20, 90, 0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transform: translate(-10px, -10px) scale(1.15);
+}
+
+.tile2:hover {
+    box-shadow:
+    0 0 10px rgba(150, 20, 90, 0.6),
+    0 0 20px rgba(150, 20, 90, 0.3),
+    0 0 30px rgba(150, 20, 90, 0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transform: translate(10px, -10px) scale(1.15);
+}
+
+.tile3:hover {
+    box-shadow:
+    0 0 10px rgba(150, 20, 90, 0.6),
+    0 0 20px rgba(150, 20, 90, 0.3),
+    0 0 30px rgba(150, 20, 90, 0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transform: translate(-10px, 10px) scale(1.15);
+}
+
+.tile4:hover {
+    box-shadow:
+    0 0 10px rgba(150, 20, 90, 0.6),
+    0 0 20px rgba(150, 20, 90, 0.3),
+    0 0 30px rgba(150, 20, 90, 0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transform: translate(10px, 10px) scale(1.15);
+}
+
+/* ========== Animationen ========== */
+@keyframes AnimationStartseite {
+    0% {
+        transform: rotateX(100deg) rotateY(100deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+}
+
+.AnimationStartseite:hover {
+    animation: AnimationStartseite 0.5s ease;
+}
+
+/* ========== Sonderzeichen (z. B. &) ========== */
+.UndZeichen {
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+}
+
+/* ========== Vanta.js Hintergrund ========== */
+#VantaHintergrund {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
