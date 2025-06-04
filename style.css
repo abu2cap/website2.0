@@ -75,9 +75,9 @@ footer {
 
 /* Individuelle Verläufe */
 .tile1 { background-image: linear-gradient(to top left, black, #d11c68 ); }
-.tile2 { background-image: linear-gradient(to top right, black, #d11c68); }
-.tile3 { background-image: linear-gradient(to bottom left, black, #d11c68); }
-.tile4 { background-image: linear-gradient(to bottom right, black, #d11c68); }
+.tile2 { background-image: linear-gradient(to top right, black, #00c3ff); }
+.tile3 { background-image: linear-gradient(to bottom left, black, #34d399); }
+.tile4 { background-image: linear-gradient(to bottom right, black, #fbbf24); }
 
 /* Hover-Effekte */
 .tile1:hover {
