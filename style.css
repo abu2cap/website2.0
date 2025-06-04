@@ -50,11 +50,14 @@ footer {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
+    animation: fadeInUp 2.5s ease forwards;
 }
 
-.delay1 { animation-delay: 0.5s; }
-.delay2 { animation-delay: 1.0s;}
+.delay1 { animation-delay: 1s; }
+.delay2 { animation-delay: 2s; }
+.delay3 { animation-delay: 3s; }
+.delay4 { animation-delay: 4s; }
+
 
 @keyframes fadeInUp {
     to {
@@ -170,7 +173,15 @@ footer {
 /* <<<----- Über mich ----->>> */
 
 .uebermich-container {
-    display: flex
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.uebermich-wrapper {
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .interessen-container {
@@ -179,3 +190,57 @@ footer {
     grid-template-rows: repeat(2, 150px);
     gap: 20px;
 }
+
+
+/* Interessen Grid Layout */
+
+.interessen-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 60px 20px;
+    margin: auto;
+    max-width: 800px;
+
+}
+
+/* Hexagone mit Polygon erzeugen */
+
+.hex {
+    width: 170px;
+    aspect-ratio: 1 / 1.15;
+    background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.hex h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #d11c68;
+}
+
+.hex ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+    font-size: 0.9rem;
+}
+
+.hex li {
+    margin: 4px 0;
+}
+
+.hex:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(209, 28, 104, 0.5);
+}
+
+
