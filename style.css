@@ -45,6 +45,24 @@ footer {
 }
 
 
+/* fade-in Effekte */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.delay1 { animation-delay: 0.5s; }
+.delay2 { animation-delay: 1.0s;}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* ========== Grid für Kacheln ========== */
 .GridContainer {
     display: grid;
@@ -146,4 +164,18 @@ footer {
     height: 100vh;
     z-index: -1;
     overflow: hidden;
+}
+
+
+/* <<<----- Über mich ----->>> */
+
+.uebermich-container {
+    display: flex
+}
+
+.interessen-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
 }
