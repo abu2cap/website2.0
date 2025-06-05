@@ -1,3 +1,6 @@
+/*A huge thanks! to the VANTAjs-Team for offering these awesome backgrounds for free <3 */
+
+
 /* ========== Grundlayout ========== */
 html, body {
     margin: 0;
@@ -97,7 +100,7 @@ footer {
 /* Individuelle Verläufe */
 .tile1 { background-image: linear-gradient(to top left, black, #d11c68 ); }
 .tile2 { background-image: linear-gradient(to top right, black, #00c3ff); }
-.tile3 { background-image: linear-gradient(to bottom left, black, #34d399); }
+.tile3 { background-image: linear-gradient(to bottom left, black, #0bd827); }
 .tile4 { background-image: linear-gradient(to bottom right, black, #fbbf24); }
 
 /* Hover-Effekte */
@@ -112,27 +115,27 @@ footer {
 
 .tile2:hover {
     box-shadow:
-    0 0 10px rgba(150, 20, 90, 0.6),
-    0 0 20px rgba(150, 20, 90, 0.3),
-    0 0 30px rgba(150, 20, 90, 0.15);
+    0 0 10px rgba(58, 20, 230, 0.6),
+    0 0 20px rgba(43, 2, 224, 0.6),
+    0 0 30px rgba(26, 1, 134, 0.6);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     transform: translate(10px, -10px) scale(1.15);
 }
 
 .tile3:hover {
     box-shadow:
-    0 0 10px rgba(150, 20, 90, 0.6),
-    0 0 20px rgba(150, 20, 90, 0.3),
-    0 0 30px rgba(150, 20, 90, 0.15);
+    0 0 10px rgba(16, 212, 9, 0.6),
+    0 0 20px rgba(7, 136, 2, 0.6),
+    0 0 30px rgba(16, 212, 9, 0.6);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     transform: translate(-10px, 10px) scale(1.15);
 }
 
 .tile4:hover {
     box-shadow:
-    0 0 10px rgba(150, 20, 90, 0.6),
-    0 0 20px rgba(150, 20, 90, 0.3),
-    0 0 30px rgba(150, 20, 90, 0.15);
+    0 0 10px rgba(255, 197, 8, 0.918),
+    0 0 20px rgba(221, 169, 0, 0.918),
+    0 0 30px rgba(167, 128, 1, 0.918);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     transform: translate(10px, 10px) scale(1.15);
 }
@@ -177,11 +180,13 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 60px 20px;
+    max-width: 600px;
 }
 
 .uebermich-wrapper {
     text-align: center;
     padding: 40px 20px;
+    font-size: 1.05rem;
 }
 
 .interessen-container {
@@ -200,18 +205,28 @@ footer {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px 10px;
     padding: 60px 20px;
     margin: auto;
     max-width: 800px;
 
 }
 
+.interessen-grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
 /* Hexagone mit Polygon erzeugen */
 
 .hex {
     width: 170px;
-    aspect-ratio: 1 / 1.15;
+    aspect-ratio: 1 / 1.1;
     background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     color: white;
