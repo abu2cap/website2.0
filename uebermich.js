@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         points: 10.0,
         maxDistance: 20.0,
         spacing: 18.0,
-        color: 0xed135f
+        color: 0xed135f,
+        color2: 0xff003c
     });
 });

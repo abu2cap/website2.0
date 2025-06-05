@@ -1,18 +1,17 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    VANTA.CLOUDS({
+    VANTA.FOG({
         el: "#VantaHintergrund",
         mouseControls: true,
         touchControls: true,
-        gyroControls: true,
+        gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        scale: 1.3,
-        scaleMobile: 1.0,
-        backgroundColor: 0x000000,
-        points: 10.0,
-        maxDistance: 20.0,
-        spacing: 18.0,
-        color: 0xff0000
+        midtoneColor: 0xff8700,
+        lowlightColor: 0x0,
+        baseColor: 0xededed,
+        blurFactor: 0.52,
+        speed: 1.20,
+        zoom: 0.80
     });
 });

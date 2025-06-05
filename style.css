@@ -47,6 +47,47 @@ footer {
     text-align: center;
 }
 
+/* Farbpalette */
+
+.rot {
+    color: #d11c68;
+    box-shadow: 0 0 10px rgba(209, 28, 104, 0.5);
+}
+
+.blau {
+    color: #00c3ff;
+    box-shadow: 0 0 10px rgba(23, 75, 218, 0.856);
+}
+
+.gruen {
+    color: #0bd827;
+    box-shadow: 0 0 10px rgba(16, 212, 9, 0.6);
+}
+
+.orange {
+    color: #fbbf24;
+    box-shadow: 0 0 10px rgba(255, 197, 8, 0.918);
+}
+
+/* Zurück-Pfeil */
+
+.zurück-pfeil {
+  position: fixed;
+  bottom: -20px;
+  left: 20px;
+  font-size: 24px; 
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  text-decoration: none;  
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+
+.zurück-pfeil:hover {
+  transform: scale(1.2);
+}
 
 /* fade-in Effekte */
 
@@ -222,7 +263,7 @@ footer {
     padding: 60px 20px;
 }
 
-/* Hexagone mit Polygon erzeugen */
+/* Hexagone mit clip-path erzeugen */
 
 .hex {
     width: 170px;
@@ -258,4 +299,25 @@ footer {
     box-shadow: 0 0 25px rgba(209, 28, 104, 0.5);
 }
 
+/* <<<----- Skills ----->>> */
+
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.linksbuendig {
+    text-align: left;
+    padding: 1.5rem;
+    list-style-type: circle;
+}
+
+.rechtsbuendig {
+    text-align: right;
+    padding: 1.5rem;
+    
+}
 
