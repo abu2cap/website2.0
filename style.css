@@ -184,15 +184,30 @@ footer {
 /* ========== Animationen ========== */
 @keyframes AnimationStartseite {
     0% {
-        transform: rotateX(100deg) rotateY(100deg);
+        transform: rotateX(90deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+        transform: translateY(100px)
+    }
+    50% {
+        transform: rotateZ(90deg);
+    }
+    75% {
+        transform: rotateZ(-50deg);
+        scale: 1.5rem;
+        color: red;
     }
     100% {
-        transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
 }
 
-.AnimationStartseite:hover {
-    animation: AnimationStartseite 0.5s ease;
+.AnimationStartseite {
+    animation: AnimationStartseite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
 }
 
 /* ========== Sonderzeichen (z. B. &) ========== */
@@ -321,3 +336,17 @@ footer {
     
 }
 
+/* <<<----- Projekte ----->>> */
+
+.projekte-container {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 80px;
+}
+
+.abgeschlossen-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: bottom;
+}
