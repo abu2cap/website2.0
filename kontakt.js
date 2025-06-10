@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         el: "#VantaHintergrund",
         mouseControls: true,
         touchControls: true,
-        gyroControls: false,
+        gyroControls: true,
         minHeight: 200.00,
         minWidth: 200.00,
         midtoneColor: 0xff8700,
@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         baseColor: 0xededed,
         blurFactor: 0.52,
         speed: 1.20,
-        zoom: 0.80
+        zoom: 0.80,
+        scale: 1.3,
+        scaleMobile: 1.0
     });
 });
