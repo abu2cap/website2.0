@@ -328,7 +328,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 60px 20px;
+    margin: 0.5rem;
 }
 
 .linksbuendig {
@@ -356,4 +358,140 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: bottom;
+}
+
+/* Ladebalken */
+
+
+
+.label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+
+}
+
+.bar {
+    background: #ddd;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.ladebalken1 {
+    width: 0%;
+    height: 12px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: width 1s ease-in-out;
+    border-radius: 6px;
+    background-size: 200% 200%;
+    animation: animation-ladebalken-html 4s linear both;
+}
+
+.ladebalken2 {
+    width: 0%;
+    height: 12px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: width 1s ease-in-out;
+    border-radius: 6px;
+    background-size: 200% 200%;
+    animation: animation-ladebalken-css 4s linear both;
+}
+
+.ladebalken3 {
+    width: 0%;
+    height: 12px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: width 1s ease-in-out;
+    border-radius: 6px;
+    background-size: 200% 200%;
+    animation: animation-ladebalken-js 4s linear both;
+}
+
+
+.note {
+    display: block;
+    font-size: 0.8rem;
+    color: #0e0c0c;
+    margin-top: 0.3rem;
+}
+
+@keyframes animation-ladebalken-html {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 38%;
+    }
+    100%{
+        width: 76%;
+    }
+}
+
+@keyframes animation-ladebalken-css {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 32%;
+    }
+    100%{
+        width: 64%;
+    }
+}
+
+@keyframes animation-ladebalken-js {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 16%;
+    }
+    100%{
+        width: 32%;
+    }
+}
+
+/* Terminal Softskills */
+
+.konsole {
+    padding: 1rem;
+    color: #00ff88;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+.konsole-wrapper {
+    background: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.15);
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.konsole-body {
+    background: #2d2d2d;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.konsole-text {
+    text-align: left;
+}
+
+.konsole-text::after {
+    content: "█";
+    position: absolute;
+    bottom: 4rem;
+    left: 1rem;
+    animation: blink-konsole-eingabe 1s step-start infinite;
+}
+
+@keyframes blink-konsole-eingabe {
+    50% { opacity: 0; }
 }

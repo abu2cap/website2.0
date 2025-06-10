@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    VANTA.BIRDS({
+    VANTA.WAVES({
         el: "#VantaHintergrund",
         mouseControls: true,
         touchControls: true,
