@@ -7,12 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
         gyroControls: true,
         minHeight: 200.00,
         minWidth: 200.00,
-        scale: 1.3,
-        scaleMobile: 1.0,
+        size: 0.6,
+        scale: 1.1,
+        scaleMobile: 0.5,
         backgroundColor: 0x000000,
-        points: 10.0,
-        maxDistance: 20.0,
-        spacing: 18.0,
+        speed:0.6,
         color: 0xff0000
     });
 });
