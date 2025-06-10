@@ -19,7 +19,23 @@
     </header>
 
     <main>
+      <h3 class="kontakt-info">Wenn Sie Fragen, Anmerkungen oder Interesse an einem persönlichen Austausch haben, können Sie gerne das Kontaktformular nutzen. Ich freue mich über Ihre Nachricht!</h3>
+      <!-- !! URL bzw VALUE ANPASSEN !! -->
+      <section> 
+      <form action="https://formsubmit.co/floswebsite13@gmail.com" method="POST" class="Kontaktformular">
+        <input type="text" name="name" placeholder="Dein Name" required>
+        <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+        <textarea name="nachricht" placeholder="Deine Nachricht..." rows="6" required></textarea>
 
+        <!-- versteckte Felder -->
+        <input type="hidden" name="_subject" value="Neue Nachricht von der Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_next" value="https://abu2cap.github.io/index.html">
+
+        <button type="submit">Nachricht senden</button>
+      </form>
+      </section>
     </main>
 
     <footer>

@@ -321,6 +321,7 @@ footer {
     box-shadow: 0 0 25px rgba(209, 28, 104, 0.5);
 }
 
+
 /* <<<----- Skills ----->>> */
 
 
@@ -345,24 +346,7 @@ footer {
     
 }
 
-/* <<<----- Projekte ----->>> */
-
-.projekte-container {
-    display: flex;
-    flex-direction: row;
-    align-items: top;
-    gap: 80px;
-}
-
-.abgeschlossen-flex {
-    display: flex;
-    flex-direction: column;
-    text-align: bottom;
-}
-
 /* Ladebalken */
-
-
 
 .label{
     display: block;
@@ -494,4 +478,86 @@ footer {
 
 @keyframes blink-konsole-eingabe {
     50% { opacity: 0; }
+}
+
+
+/* <<<----- Projekte ----->>> */
+
+.projekte-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.spalten {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.spalten h2 {
+    margin: 1rem;
+}
+
+.spalten li {
+        list-style-type: circle;
+}
+
+
+/* <<<----- Kontakt ----->>> */
+
+/* Kontaktformular */
+
+.kontakt-info {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.Kontaktformular {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: radial-gradient(#f4fff8, #f0ba08da);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Kontaktformular input,
+.Kontaktformular textarea {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Kontaktformular input:focus,
+.Kontaktformular textarea:focus {
+  outline: none;
+  border-color: #201701;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.Kontaktformular button {
+  background-color: #fbbf24;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Kontaktformular button:hover {
+  background-color: #fbf724;
+  scale: 1.05;
 }
