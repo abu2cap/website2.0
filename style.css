@@ -38,6 +38,7 @@ header {
     position: relative;
     width: 100%;
     z-index: 1;
+    margin-top: 1rem;
 }
 
 header, h1 {
@@ -52,7 +53,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Farbpalette */
