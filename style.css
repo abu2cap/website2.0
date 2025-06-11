@@ -302,7 +302,7 @@ footer {
 }
 
 .hex h3 {
-    margin-top: 0;
+    margin-top: 15px;
     font-size: 1.1rem;
     color: #d11c68;
 }
@@ -315,7 +315,7 @@ footer {
 }
 
 .hex li {
-    margin: 4px 0;
+    margin: 10px 0;
 }
 
 .hex:hover {
