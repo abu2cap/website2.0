@@ -1,17 +1,15 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    VANTA.CELLS({
+    VANTA.DOTS({
         el: "#VantaHintergrund",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        size: 1.0,
-        scale: 1.0,
-        scaleMobile: 0.5,
-        backgroundColor: 0x000000,
-        speed:0.6,
-        color: 0xff0000
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x20ff3a,
+        color2: 0x20ff54
     });
 });
