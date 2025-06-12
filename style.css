@@ -309,7 +309,7 @@ footer {
 }
 
 .hex h3 {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 1.1rem;
     color: #d11c68;
 }
@@ -317,12 +317,12 @@ footer {
 .hex ul {
     list-style: none;
     padding: 0;
-    margin: 50px 0 0 0;
+    margin: 35px 0 0 0;
     font-size: 0.9rem;
 }
 
 .hex li {
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .hex:hover {
