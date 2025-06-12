@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        scale: 1.00,
+        scale: 1.20,
+        size: 3.0,
         scaleMobile: 1.00,
         color: 0x20ff3a,
         color2: 0x20ff54
