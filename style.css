@@ -16,6 +16,13 @@ html, body {
     overflow-x: hidden;
     font-family: "Anonymous Pro", monospace;
     color: white;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 9.5px;
+    }
 }
 
 /* Wrapper für den Grid-Inhalt */
@@ -458,12 +465,6 @@ footer {
     max-width: 600px;
     margin: 1.5rem auto;
     position: relative;
-}
-
-@media (max-width: 600px) {
-    html {
-        font-size: 10px;
-    }
 }
 
 .konsole-body {
