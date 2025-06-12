@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         minWidth: 200.00,
         midtoneColor: 0xff8700,
         lowlightColor: 0x0,
-        baseColor: 0xededed,
+        baseColor: 0xfac56f,
         blurFactor: 0.52,
         speed: 1.20,
         zoom: 0.80,

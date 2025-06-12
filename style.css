@@ -207,10 +207,10 @@ footer {
         transform: translateY(100px)
     }
     50% {
-        transform: rotateZ(90deg);
+        transform: rotateZ(70deg);
     }
     75% {
-        transform: rotateZ(-50deg);
+        transform: rotateZ(-40deg);
         scale: 1.5rem;
         color: red;
     }
