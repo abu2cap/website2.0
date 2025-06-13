@@ -89,13 +89,13 @@ footer {
 
 
 .pfeil-margin {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 
 .zurück-pfeil {
     position: relative;
-    margin: 6rem 0 1rem 0;
+    margin: 0 0 1rem 0;
     font-size: 24px; 
     background: rgba(255, 255, 255, 0.05);
     padding: 12px;
