@@ -93,7 +93,7 @@ footer {
 }
 
 
-.zurück-pfeil {
+.zurueck-pfeil {
     position: relative;
     margin: 0 0 1rem 0;
     font-size: 24px; 
@@ -103,10 +103,9 @@ footer {
     backdrop-filter: blur(4px);
     text-decoration: none;  
     transition: transform 0.2s ease;
-    z-index: 2;
 }
 
-.zurück-pfeil:hover {
+.zurueck-pfeil:hover {
     transform: scale(1.2);
 }
 
