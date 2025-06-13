@@ -165,10 +165,10 @@ footer {
 }
 
 /* Individuelle Verläufe */
-.tile1 { background-image: linear-gradient(to top left, #96174c, #96174c); }
-.tile2 { background-image: linear-gradient(to top right, #00c3ff, #00c3ff); }
-.tile3 { background-image: linear-gradient(to bottom left, #098119, #098119); }
-.tile4 { background-image: linear-gradient(to bottom right, #e9b01f, #e9b01f); }
+.tile1 { background-image: linear-gradient(to top left, #2c0616, #96174c); }
+.tile2 { background-image: linear-gradient(to top right, #01222c, #00c3ff); }
+.tile3 { background-image: linear-gradient(to bottom left, #04330b, #098119); }
+.tile4 { background-image: linear-gradient(to bottom right, #3f3008, #e9b01f); }
 
 /* Hover-Effekte */
 .tile1:hover {
