@@ -85,6 +85,12 @@ footer {
     box-shadow: 0 0 10px rgba(255, 197, 8, 0.918);
 }
 
+/* Blurr-Effekt*/
+
+.blur {
+    backdrop-filter: blur(4px);
+}
+
 /* Zurück-Pfeil */
 
 
