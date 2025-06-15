@@ -625,16 +625,27 @@ footer {
 }
 
 .nav-spiele h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 15px;
 }
 
 .footer-spiele {
     grid-area: footer-spiele;
-    background-color: red;
+    background-color: red;   
 }
 
-/* Navigationsleiste */
+/* Header Spiele */
+
+.header-spiele-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigationsleiste Spiele */
 
 .nav-spiele-flex {
     display: flex;
@@ -646,4 +657,14 @@ footer {
     padding: 0;
 }
 
+/* Footer Spiele */
+
+.footer-spiele-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 
