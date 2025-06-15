@@ -21,15 +21,15 @@
             </div>
 
           </div>
-          <div class="nav-spiele">
+          <nav class="nav-spiele">
+            <button id="nav-spiele-toggle">≡</button>
             <h2>Navigation</h2>
             <ul class="nav-spiele-flex">
               <li>Memory</li>
               <li>Einstellungen</li>
               <li>Hilfe</li>
             </ul>
-
-          </div>
+          </nav>
           <div class="main-spiele">
 
           </div>
@@ -43,8 +43,12 @@
         </div>
 
     </main>
-
-
+    
     <script src="spiele.js"></script>
+    <script>
+      document.getElementById("nav-spiele-toggle").addEventListener("click", () => {
+        document.querySelector(".spiele-container").classList.toggle("nav-eingeklappt");
+      });
+    </script>
   </body>
 </html>
