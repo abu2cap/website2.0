@@ -583,3 +583,67 @@ footer {
   background-color: #fbf724;
   scale: 1.05;
 }
+
+
+/* <<<----- Spiele ----->>> */
+
+
+/* -- Spiele Container -- */
+
+/* Eventuell noch ne Idee: grid-template-rows: auto minmax(100px, 1fr) minmax(200px, 3fr) minmax(200px, 3fr) minmax(100px, 1fr) auto; */
+
+.spiele-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
+    grid-template-areas:
+    "   nav-spiele       header-spiele     header-spiele     header-spiele     header-spiele     header-spiele   "
+    "   nav-spiele       main-spiele       main-spiele       main-spiele       main-spiele       main-spiele   "
+    "   nav-spiele       main-spiele       main-spiele       main-spiele       main-spiele       main-spiele   "
+    "   nav-spiele       main-spiele       main-spiele       main-spiele       main-spiele       main-spiele   "
+    "   nav-spiele       main-spiele       main-spiele       main-spiele       main-spiele       main-spiele   "
+    "   footer-spiele    footer-spiele     footer-spiele     footer-spiele     footer-spiele     footer-spiele   "
+    ;
+}
+
+
+.header-spiele {
+    grid-area: header-spiele;
+    background-color: green;
+}
+
+.main-spiele {
+    grid-area: main-spiele;
+    background-color: blue;
+}
+
+.nav-spiele {
+    grid-area: nav-spiele;
+    background-color: yellow;
+}
+
+.nav-spiele h2 {
+    font-size: 3rem;
+    margin: 15px;
+}
+
+.footer-spiele {
+    grid-area: footer-spiele;
+    background-color: red;
+}
+
+/* Navigationsleiste */
+
+.nav-spiele-flex {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: left;
+    margin: 20px 20px;
+    gap: 10px;
+    padding: 0;
+}
+
+
