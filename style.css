@@ -600,7 +600,7 @@ footer {
     grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
     grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
     grid-template-areas:
-    "   header-spiele       header-spiele     header-spiele     header-spiele     header-spiele     header-spiele   "
+    "   header-spiele    header-spiele     header-spiele     header-spiele     header-spiele     header-spiele   "
     "   nav-spiele       main-spiele       main-spiele       main-spiele       main-spiele       main-spiele   "
     "   nav-spiele       main-spiele       main-spiele       main-spiele       main-spiele       main-spiele   "
     "   nav-spiele       main-spiele       main-spiele       main-spiele       main-spiele       main-spiele   "
@@ -672,7 +672,7 @@ footer {
     width: 10px;
     height: 200px;
     right: 0px;
-    top: 300px;
+    top: 15rem;
     z-index: 1000;
     cursor: pointer;
 }
@@ -692,3 +692,11 @@ footer {
     padding: 0;
 }
 
+/* <<<----- Memory ----->>> */
+
+#memory-spielbrett{
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 10px;
+}
