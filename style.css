@@ -703,6 +703,7 @@ footer {
     gap: 10px;
 }
 
-#memory-karten{
-    
+.memory-karten{
+    background: purple;
+    z-index: 20;
 }
