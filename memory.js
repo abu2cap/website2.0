@@ -13,9 +13,14 @@ function fisherYatesShuffle(array){
 }
 
 // Karten Array //
-
+function mischeKarten(){
 let cards = [];
 for (let i = 0; i < 12; i++) {
     cards.push(i);
     cards.push(i);
+}
+
+fisherYatesShuffle(cards);
+
+document.getElementById("ergebnis").textContent = "Gemischtes Array: " + cards.join(", ");
 }
